@@ -1,0 +1,33 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/estilo.css" />
+    <title>Login</title>
+    <h1>Blackjack</h1>
+  </head>
+  <body>
+    <!-- Asumiendo que tienes campos con id "nombreInput", "emailInput", y "passwordInput" en tu formulario -->
+    <input type="text" id="nombreInput" placeholder="Nombre" />
+    <input type="email" id="emailInput" placeholder="Correo electrónico" />
+    <input type="password" id="passwordInput" placeholder="Contraseña" />
+    <button id="resgitrarUsuario">Registrar Usuario</button>
+    <!-- EL RESGISTRAR FUNCIONA PERFECTAMENTE PERO EN EL LOGIN ME SALE EL SIGUIENTE ERROR:
+    
+        login.js:10 Uncaught TypeError: Cannot read properties of null (reading 'classList')
+        at login.js:10:37
+    -->
+   
+
+    <input type="email" id="emailInput2" placeholder="Correo electrónico" />
+    <input type="password" id="passwordInput2" placeholder="Contraseña" />
+    <button id="loginUsuario">Login</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="./js/supabase.js"></script>
+    <script src="./js/login.js" defer></script>
+  </body>
+</html>
